@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\cv.html" />
+    <None Include="wwwroot\Magamrol\cv.html" />
     <None Include="wwwroot\index.html" />
-    <None Include="wwwroot\tehenke.jpg" />
+    <None Include="wwwroot\Magamrol\tehenke.jpg" />
   </ItemGroup>
 
 </Project>
