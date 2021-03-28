@@ -1,21 +1,16 @@
-﻿window.onload = function () {
-    var kérdések
+﻿
+        var kérdések
 
-    letöltés();
-    
-        function letöltés() {
-        fetch('/questions.json')
-        .then(response => response.json())
-        .then(data => letöltésBefejeződött(data));
-        }
-    
+       
         function letöltésBefejeződött(d) {
             console.log("Sikeres letöltés")
-            console.log(d)
-            kérdések = d;
-        }
+            //console.log(d)
+            kérdések = d; console.log(kérdések);
 
-     var i = 0;
+}
+
+window.onload = function () {
+    var i = 0;
 
     válaszMegjelenítés(i);
 
@@ -42,10 +37,11 @@
     }
 
     function válaszMegjelenítés(i) {
+        console.log(kérdések);
         let válasz1 = document.getElementById("válasz1");
         console.log(i);
-        válasz1.innerText = kérdések[i].answer1;
-       
+        
+        válasz1.innerText = kérdések[i].answer2;       
         let válasz2 = document.getElementById("válasz2");
         válasz2.innerText = kérdések[i].answer2;
         let válasz3 = document.getElementById("válasz3");

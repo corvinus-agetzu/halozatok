@@ -8,6 +8,12 @@
 </head>
 <body>
     <div id="külső">
+        <script>
+                    fetch('/questions.json')
+                    .then(response => response.json())
+                    .then(data => letöltésBefejeződött(data));
+            
+        </script>
 
         <div id="kérdés_szöveg">
             Kérdés szövege
