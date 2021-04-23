@@ -4,11 +4,16 @@
     <meta charset="utf-8" />
     <title></title>
     <link href="hajosteszt.css" rel="stylesheet" />
-    <script src="hetedik.js"></script>
+    <script src="hetedik2.js"></script>
 </head>
 <body>
     <div id="külső">
-     
+        <script>
+                    fetch('/questions/all')
+                    .then(response => response.json())
+                    .then(data => letöltésBefejeződött(data));
+            
+        </script>
 
         <div id="kérdés_szöveg">
             Kérdés szövege
