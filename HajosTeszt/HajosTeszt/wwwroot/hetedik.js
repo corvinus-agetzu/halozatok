@@ -1,19 +1,26 @@
 ﻿window.onload = function () {
     var csomag;
     function kérdésMegjelenítés(kérdés) {
-        console.log(kérdés);
+      //  console.log(kérdés);
+        
         document.getElementById("kérdés_szöveg").innerText = kérdés.questionText
         document.getElementById("válasz1").innerText = kérdés.answer1
         document.getElementById("válasz2").innerText = kérdés.answer2
         document.getElementById("válasz3").innerText = kérdés.answer3
-        if (kérdés.image == "") {
-            document.getElementById("kép").style.visibility = false
-        }
-        else {
-            document.getElementById("kép").style.visibility = true
+       if (kérdés.image == "") {
+           teszt = document.getElementById("kép1");
+           if (teszt != null) { teszt.remove(); }
+           console.log("nincs kép");
+           }
+       else {
+           console.log("van kép");
+           ujkep = document.createElement("img");
+           ujkep.id = "kép1";
+           document.getElementById("kép").appendChild(ujkep);
+           document.getElementById("kép1").src = "https://szoft1.comeback.hu/hajo/" + kérdés.image;
         }
 
-        document.getElementById("kép1").src = "https://szoft1.comeback.hu/hajo/" + kérdés.image;
+      
         csomag = kérdés;
     }
 
@@ -42,7 +49,7 @@
 
         alapszín();
         kérdésBetöltés(i);
-        kérdésMegjelenítés(i);
+       
 
     };
 
@@ -54,7 +61,7 @@
 
         alapszín();
         kérdésBetöltés(i);
-        kérdésMegjelenítés(i);
+       
     };
 
     function válasz1() {

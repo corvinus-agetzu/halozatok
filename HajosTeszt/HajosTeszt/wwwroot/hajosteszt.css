@@ -1,10 +1,15 @@
-﻿html, body {
+﻿/* *{
+    box-sizing:border-box;
+}*/
+
+html,
+body {
     height: 100%;
 }
 
 div {
     margin: 10px;
-    border: 1px solid fuchsia;
+    border: 1px solid green;
 }
 
 #külső {
@@ -38,8 +43,10 @@ div {
 }
 
 #kép {
+    /*max width:100%;
+    height: auto;*/
     overflow: hidden;
-    //Felesleges, a kép túlnyúló részét rejtené el flex-shrink: 0;
+    /*felesleges, a kép túlnyúló részét rejtené el*/
     flex-shrink: 0;
     flex-grow: 0
 }
@@ -50,8 +57,8 @@ div {
     background-color: lightsteelblue;
 }
 
-.kerdes {
-}
+
+/*.kerdes{}*/
 
 .jó {
     background-color: green;
@@ -65,29 +72,29 @@ div {
     background-color: fuchsia;
     color: white;
 }
-/*@media screen and (min-width: 800px) {
-                    body {
-                        display: flex;
-                        flex-direction: column;
-                        margin: auto;
-                        max-width: 1500px;
-                    }
 
-                    #középső {
-                        display: flex;
-                    }
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 1500px;
+    }
 
-                    #vezérlő,
-                    #kérdés_szöveg {
-                        order: -1;
-                    }
+    #középső {
+        display: flex;
+    }
 
-                    #válaszok {
-                        flex: 1 1 75%
-                    }
+    #vezérlő,
+    #kérdés_szöveg {
+        order: -1;
+    }
 
-                    #kép {
-                        flex: 1 1 25%
-                    }*/
+    #válaszok {
+        flex: 1 1 75%
+    }
 
-
+    #kép {
+        flex: 1 1 25%
+    }
+}
