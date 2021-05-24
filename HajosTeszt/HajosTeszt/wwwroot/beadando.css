@@ -1,0 +1,51 @@
+﻿
+body {
+    background-color: yellow;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+
+#kiemel {
+    color: black;
+    font-size: large;
+    background-color: rgb(114, 194, 194);
+}
+
+.fo {
+    text-align: center;
+}
+
+.gomb {
+    color: black;
+    font-size: large;
+    background-color: rgb(114, 194, 194);
+    border: 1px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 7px;
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.nemlathato {
+    display: none;
+}
+
+.eredmeny {
+    max-width: 25%;
+    background-color: #f3b610;
+    color: blue;
+}
+
+

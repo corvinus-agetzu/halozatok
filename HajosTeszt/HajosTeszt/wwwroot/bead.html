@@ -4,7 +4,58 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link href="beadando.css" rel="stylesheet" />
+    <style>
+
+        body {
+            background-color: yellow;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        #kiemel {
+            color: black;
+            font-size: large;
+            background-color: rgb(114, 194, 194);
+        }
+
+        .fo {
+            text-align: center;
+        }
+
+        .gomb {
+            color: black;
+            font-size: large;
+            background-color: rgb(114, 194, 194);
+            border: 1px solid black;
+            border-radius: 8px;
+            text-decoration: none;
+            padding: 7px;
+        }
+
+
+        table {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nemlathato {
+            display: none;
+        }
+
+        .eredmeny {
+            width: max-content;
+            background-color: #f3b610;
+            color: blue;
+        }
+    </style>
+
     <script>
         var db = 0;
         var boltok = [];
@@ -40,7 +91,7 @@
                             "<br> TELEFON:  " + boltok[i].telefon.toString() +
                             "<br> E-MAIL:  " + boltok[i].email +
                             "<br> WEBLAP:  " + boltok[i].weblap + "</p>";
-                        document.getElementById("ide").appendChild(ujbolt)
+                        document.getElementById("ide").appendChild(ujbolt);
 
 
 
@@ -114,7 +165,7 @@
                 .then()
 
         };
-        //adott kulcsú bolt listázása
+   //adott kulcsú bolt listázása
         function egybolt() {
             document.getElementById("abolt").innerHTML = "Kérem várjon!";
             let szam = parseInt(document.getElementById("bolt").value);
@@ -146,7 +197,7 @@
     <a id="top"></a>
     <h1>BOLTOK</h1>
     <div class="fo">
-        <p>Ezen az oldalon a webshop adatbázisom BOLTOK tábláját tekintheti meg.</p>
+        <p>Ezen az oldalon a BOLTOK ADATBÁZIS-t tekintheti meg.</p>
         <p>Kérem, nyomja meg a megfelelő gombokat, a funkciók eléréséhez!</p>
     </div>
 
